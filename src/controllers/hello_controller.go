@@ -7,18 +7,3 @@ func GetHello(ctx *gin.Context) {
 		"message": "hello",
 	})
 }
-
-type HelloController struct { }
-
-func NewHelloController() *HelloController {
-  return &HelloController{}
-}
-
-func (controller *HelloController) fuga() {
-
-}
-
-func hoge() {
-  con := NewHelloController()
-  con.fuga()
-}
