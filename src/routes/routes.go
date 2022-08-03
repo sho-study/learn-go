@@ -8,8 +8,7 @@ import (
 func GetRouter() *gin.Engine {
 	router := gin.Default()
 
-	router.GET("/", controllers.GetHello)
-	router.GET("/hoge", controllers.GetHello)
+  router.POST("/user", controllers.CreateUser)
 
 	return router
 }
